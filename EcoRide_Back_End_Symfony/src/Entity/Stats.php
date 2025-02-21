@@ -5,8 +5,10 @@ namespace App\Entity;
 use App\Repository\StatsRepository;
 use Doctrine\DBAL\Types\Types;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Metadata\ApiResource;
 
 #[ORM\Entity(repositoryClass: StatsRepository::class)]
+#[ApiResource]
 class Stats
 {
     #[ORM\Id]
